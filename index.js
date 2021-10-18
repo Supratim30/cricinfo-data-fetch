@@ -114,29 +114,29 @@ function createScoreCard(teamName, match, matchFileName) {
         let page = pdfdoc.getPage(0);
 
         page.drawText(t1, {
-            x: 320,
-            y: 729,
-            size: 8
+            x: 85,
+            y: 400,
+            size: 16
         });
         page.drawText(t2, {
-            x: 320,
-            y: 715,
-            size: 8
+            x: 310,
+            y: 400,
+            size: 16
         });
         page.drawText(t1s, {
-            x: 320,
-            y: 701,
-            size: 8
+            x: 200,
+            y: 400,
+            size: 16
         });
         page.drawText(t2s, {
-            x: 320,
-            y: 687,
-            size: 8
+            x: 420,
+            y: 400,
+            size: 16
         });
         page.drawText(result, {
-            x: 320,
-            y: 673,
-            size: 8
+            x: 150,
+            y: 490,
+            size: 16
         });
 
         let finalPDFBytesKaPromise = pdfdoc.save();
